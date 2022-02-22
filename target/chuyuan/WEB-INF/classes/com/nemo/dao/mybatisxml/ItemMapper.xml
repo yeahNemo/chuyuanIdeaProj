@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nemo.dao.myinterface.ItemDao">
+
+    <!--配置查询所有User， id和UserDao接口中的方法名绑定-->
+
+    <select id="getItemList" resultType="com.nemo.pojo.Item">
+        select * from storage;
+    </select>
+</mapper>
